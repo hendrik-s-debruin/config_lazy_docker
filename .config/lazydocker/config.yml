@@ -2,6 +2,7 @@ reporting: "off"
 
 gui:
   returnImmediately: true
+  wrapMainPanel: true
 
 customCommands:
   containers:
