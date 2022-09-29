@@ -18,6 +18,9 @@ customCommands:
       attach: true
       command: 'docker exec -it {{ .Container.ID }} zsh'
       serviceNames: []
+    - name: dive
+      attach: true
+      command: 'dive {{ .Container.ID }}'
 
   images:
     - name: bash
@@ -32,3 +35,6 @@ customCommands:
       attach: true
       command: 'docker run -ti {{ .Image.ID }} zsh'
       serviceNames: []
+    - name: dive
+      attach: true
+      command: 'dive {{ .Image.ID }}'
