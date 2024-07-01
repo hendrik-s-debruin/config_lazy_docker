@@ -8,33 +8,33 @@ customCommands:
   containers:
     - name: bash
       attach: true
-      command: 'docker exec -it {{ .Container.ID }} bash'
+      command: "docker exec -it {{ .Container.ID }} bash"
       serviceNames: []
     - name: sh
       attach: true
-      command: 'docker exec -it {{ .Container.ID }} sh'
+      command: "docker exec -it {{ .Container.ID }} sh"
       serviceNames: []
     - name: zsh
       attach: true
-      command: 'docker exec -it {{ .Container.ID }} zsh'
+      command: "docker exec -it {{ .Container.ID }} zsh"
       serviceNames: []
     - name: dive
       attach: true
-      command: 'dive {{ .Container.ID }}'
+      command: "dive {{ .Container.ID }}"
 
   images:
     - name: bash
       attach: true
-      command: 'docker run -ti {{ .Image.ID }} bash'
+      command: "docker run -ti {{ .Image.ID }} bash"
       serviceNames: []
     - name: sh
       attach: true
-      command: 'docker run -ti {{ .Image.ID }} sh'
+      command: "docker run -ti {{ .Image.ID }} sh"
       serviceNames: []
     - name: zsh
       attach: true
-      command: 'docker run -ti {{ .Image.ID }} zsh'
+      command: "docker run -ti {{ .Image.ID }} zsh"
       serviceNames: []
     - name: dive
       attach: true
-      command: 'dive {{ .Image.ID }}'
+      command: "dive {{ .Image.ID }}"
